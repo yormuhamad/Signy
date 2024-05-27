@@ -1,0 +1,156 @@
+form elements
+•<input>
+•<label>
+•<textarea>
+•<select>
+•<option>
+•<optgroup>
+•<datalist>
+•<button>
+•<fieldset>
+•<legend>
+
+<input> Element
+<input type="text" id="fname" name="fname">
+
+Full list of Input Types
+•<input type="button">
+•<input type="checkbox">
+•<input type="color">
+•<input type="date">
+•<input type="datetime-local">
+•<input type="email">
+•<input type="file">
+•<input type="hidden">
+•<input type="image">
+•<input type="month">
+•<input type="number">
+•<input type="password">
+•<input type="range">
+•<input type="reset">
+•<input type="search">
+•<input type="submit">
+•<input type="tel">
+•<input type="text">
+•<input type="time">
+•<input type="url">
+•<input type="week">
+
+RadioButtons
+type
+
+Table of Contents
+1.Display(inline, block)
+2.Display(flex)
+
+
+Display(inline, block)
+Амволи намоиш хосияти муҳимтарини CSS барои
+танзими назорат. ҲарHTMLelement дорои арзиши намоиши 
+пешфарз вобаста ба кадом намуди элементи он мебошад.
+ Унсурҳои пешфарзии displayvalueformost блок ё сатр мебошанд
+
+Block level element
+Унсури сатҳи блок ҳамеша дар хати нав оғоз мешавад ва 
+тамоми паҳнои дастрасро мегирад (ба тарафи чап дароз мешавад
+<div>
+<h1> - <h6>
+<p>
+<form>
+<table>
+
+Inline level element
+Элементи дарунсохт дар хати нав оғоз намешавад ва танҳо 
+ба қадри кофӣ васеъро ишғол мекунад.
+<span>
+<a>
+<img>
+<input>
+<button>
+
+Override TheDefaultDisplayValue
+Тавре ки зикр гардид, ҳар як элемент дорои пешфарз аст
+арзиши намоиш. Бо вуҷуди ин, шумо метавонед бекор кунед
+ин. Тағир додани унсури дарунсохт ба блок
+элемент
+мисол:
+li {
+display: inline;
+}
+
+Display flex
+Идеяи асосии пас аз тарҳбандии flex ин аст, ки ба контейнер 
+қобилияти тағир додани паҳнӣ / баландии ашёи он (ва тартиби) 
+барои беҳтарин пур кардани фазои мавҷуда мебошад.
+
+flex-wrap
+nowrap, wrap, wrap-reverse
+
+justify-content
+flex-start, flex-end, center, space-between, space-arround, space-evenly
+
+align-item
+flex-start, flex-end, center, stretch, baseline
+
+align-content
+flex-start, flex-end, center, space-between, space-arround,stretch
+
+align-self
+auto, flex-start,flex-end,center, baseline
+
+
+Positions
+Хусусияти мавқеъ навъи ҷойгиркунии усули барои элемент 
+истифодашавандаро муайян мекунад. Панҷ арзишҳои мавқеъи 
+гуногун мавҷуданд: статикӣ, нисбӣ, собит, мутлақ, часпанда. 
+(static, relative, fixed, absolute,sticky.)
+Унсурҳо бо истифода аз хосиятҳои боло, поён, чап ва рост 
+ҷойгир карда мешаванд
+
+Position relative
+An element withposition:relative;
+s positionedrelative toits normalposition.
+ Settingthetop,right, bottom, andleftproperties 
+of arelatively-positionedelementwillcause 
+it tobeadjustedaway fromits normalposition
+
+Position:fixed
+An element with position:
+fixed;ҷойгир шудааст
+нисбат ба намоишгоҳ, ки ин ҳамеша маънои онро дорад
+дар ҳамон ҷо мемонад
+ҳатто агар саҳифа бошад
+ҳаракат кард. Унсури устувор
+фосила намегузорад
+саҳифае, ки дар он ҷо хоҳад буд
+одатан буданд
+ҷойгир шудааст
+
+Position absolute
+An element withposition:absolute;
+аст, ки нисбат ба наздиктарин мавқеъи як cestor Эзоҳ: 
+Элементҳои мутлақи ҷойгиршуда аз ҷараёни муқаррарӣ 
+хориҷ карда мешаванд ва метавонанд унсурҳоро ба ҳам монанд кунанд.
+
+Position : sticky
+An element with position:
+sticky;ҷойгир шудааст
+дар асоси гардиши корбар
+мавқеъ. Унсури часпак
+байни хешовандӣ иваз мекунад
+ва собит, вобаста ба
+мавқеи ҳаракат. аст
+нисбат ба мавқеъи то а
+мавқеъи офсетӣ дода шудааст
+
+Z-index
+Вақте ки элементҳо ҷойгир карда мешаванд, онҳо метавонанд 
+унсурҳои дигарро такрор кунанд. Z- zindex stackorder
+ як элементро муайян мекунад. Anelement метавонад тартиби 
+мусбӣ ё манфӣ дошта бошад. Эзоҳ: z-index танҳо дар унсурҳои 
+ҷойгиршуда кор мекунад (мавқеъ: мутлақ, мавқеъ: нисбӣ, мавқеъ:
+ собит ё мавқеъ: часпанда)
+
+Withoutz-index
+If two positionedelementsoverlap eachotherwithoutaz-index specified,
+ theelement definedlastintheHTML code will beshownontop.
